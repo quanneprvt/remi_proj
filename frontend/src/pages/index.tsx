@@ -4,7 +4,7 @@ const Index = () => {
 
 export default Index;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/login",
