@@ -51,7 +51,10 @@ const LoginForm: React.FC<LoginFormProps> = ({
       <Form.Item
         label="Password"
         name="password"
-        rules={[{ required: true, message: "Please input your password!" }]}
+        rules={[
+          { required: true, message: "Please input your password!" },
+          { min: 8, message: "password must be minimum 8 characters." },
+        ]}
         labelCol={{ span: 8 }}
         labelAlign={"left"}
       >
